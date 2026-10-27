@@ -13,3 +13,9 @@ jobs:
       - run: ruff check .
       - run: pytest
       - run: python -m build --no-isolation
+      - run: python -m entity_matching evaluate --output ci-evidence/evaluation.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: entity-matching-evidence
+          path: ci-evidence/
