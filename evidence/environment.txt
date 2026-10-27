@@ -1,0 +1,17 @@
+Command: python -m entity_matching evaluate --output evidence/large-evaluation.json
+Exit status: 0; 5 interleaved repeats per method
+Cleanup: no processes or temporary state created; evidence retained
+Host: STEVVU
+OS: Microsoft Windows NT 10.0.26200.0
+CPU: Intel(R) Core(TM) Ultra 9 275HX
+Python: Python 3.11.9
+Source SHA256 (post-run; cloud.py identifier validation subsequently tightened):
+60B9AB869611D19E4AEC6BB5D0291B2162EEB7A2906B1F3FD81A6FFA00D8B0DA src\entity_matching\__init__.py
+11C34BEF8797105C8B53F1C6D60C2829F1F2C7131B942B6E4706A87D71C319B0 src\entity_matching\__main__.py
+BC5F6D31F8897BD54174F618D891CD9D6278CB73687FCC208543CE50AD51CEE9 src\entity_matching\cloud.py
+2A184621C7A0929428E1E89F5F7288E775A0F4B7354E56939713E7236083D5DE src\entity_matching\core.py
+2263669882CE4F07B0BD19FA087BEB9E3727CE2EEFB96BDB09071BEAF4ED44B9 src\entity_matching\evaluation.py
+F2FD7811373060610BAF939ADFF5816C35BC7275E7AECF9EEC03D8F6A708EC92 src\entity_matching\sql\embed.sql
+2956CFB1F5DA0E70DCDFC657A96168AFC169FAA0A3D0173E20E6579DE6FE07CE src\entity_matching\sql\exact_baseline.sql
+96E7C3D6C86F8ED06CB92BC1A725260859B12915D0A5C86C0DAAC7683049AE26 src\entity_matching\sql\register.sql
+FC6F6AC3AEB8DDF0D7A72F9AEC456649C0584B8219C5ACA3A650018DC4DABE58 src\entity_matching\sql\search.sql

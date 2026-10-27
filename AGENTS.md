@@ -1,0 +1,3 @@
+# Project conventions
+
+Use the isolated `.venv`; install pinned dependencies with `python -m pip install -r requirements-lock.txt` then `python -m pip install --no-deps -e .`. Run `.venv/Scripts/python -m pytest -q`, `.venv/Scripts/ruff check .`, and `.venv/Scripts/python -m build --no-isolation` on Windows; use equivalent `.venv/bin` paths on Unix. Drive the CLI using `.agents/skills/verify-bigquery-entity-matching/SKILL.md` and preserve existing evidence. Do not execute cloud operations without explicit authorization and an appropriate budget. Keep synthetic local metrics separate from cloud behavior.

@@ -1,0 +1,158 @@
+{
+  "seed": 329,
+  "train_ids": [
+    "j",
+    "g",
+    "k",
+    "a",
+    "b",
+    "c"
+  ],
+  "test_ids": [
+    "l",
+    "d",
+    "f",
+    "i",
+    "e",
+    "h"
+  ],
+  "threshold": 0.8,
+  "margin": 0.05,
+  "note": "Synthetic lexical comparator, NOT Gemini; thresholds fixed before evaluation.",
+  "methods": {
+    "exact": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "f1": 0.2857142857142857,
+      "comparisons": 48,
+      "predictions": [
+        {
+          "query_id": "q-l",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.0
+        },
+        {
+          "query_id": "q-d",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.0
+        },
+        {
+          "query_id": "q-f",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.0
+        },
+        {
+          "query_id": "q-i",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.0
+        },
+        {
+          "query_id": "q-e",
+          "canonical_id": "e",
+          "status": "matched",
+          "score": 1.0
+        },
+        {
+          "query_id": "q-h",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.0
+        },
+        {
+          "query_id": "nonmatch-1",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.0
+        },
+        {
+          "query_id": "nonmatch-2",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.0
+        }
+      ],
+      "latency_ms": [
+        0.1424,
+        0.0548,
+        0.0528,
+        0.0513,
+        0.0565
+      ],
+      "repeats": 5
+    },
+    "lexical": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "comparisons": 48,
+      "predictions": [
+        {
+          "query_id": "q-l",
+          "canonical_id": "l",
+          "status": "matched",
+          "score": 0.9777777777777777
+        },
+        {
+          "query_id": "q-d",
+          "canonical_id": "d",
+          "status": "matched",
+          "score": 0.9714285714285714
+        },
+        {
+          "query_id": "q-f",
+          "canonical_id": "f",
+          "status": "matched",
+          "score": 0.9787234042553191
+        },
+        {
+          "query_id": "q-i",
+          "canonical_id": "i",
+          "status": "matched",
+          "score": 0.9090909090909091
+        },
+        {
+          "query_id": "q-e",
+          "canonical_id": "e",
+          "status": "matched",
+          "score": 1.0
+        },
+        {
+          "query_id": "q-h",
+          "canonical_id": "h",
+          "status": "matched",
+          "score": 0.8780487804878049
+        },
+        {
+          "query_id": "nonmatch-1",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.3137254901960784
+        },
+        {
+          "query_id": "nonmatch-2",
+          "canonical_id": null,
+          "status": "rejected",
+          "score": 0.3333333333333333
+        }
+      ],
+      "latency_ms": [
+        0.9506,
+        0.8268,
+        0.8053,
+        0.8114,
+        0.8063
+      ],
+      "repeats": 5
+    }
+  }
+}

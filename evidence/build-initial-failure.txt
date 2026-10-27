@@ -1,0 +1,1 @@
+Initial `python -m build --no-isolation` failed: missing setuptools>=68 in the isolated environment. Installed setuptools==80.9.0 and added it to the lock; subsequent build succeeded (build.log).
